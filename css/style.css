@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* COLOR nav #e0a680 */
+/* COLOR links #afc6ac */
+
+body{
+    font-family: 'Roboto', sans-serif ;
+}
+
+h1, h2, h3,  h4, h5, h6 {
+    color: #afc6ac;
+    font-weight: 300;
+}
+
+.contenedor{
+    width: 80%;
+    margin: auto;
+}
+
+
+/*NAV*/
+
+
+nav{
+    width: 100%;
+    background-color: #e0a680;
+    height: 80px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);      /*Sombra para separar navs*/
+    transition: ease-in-out 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: .5px solid #c5a164;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px 5px 40px;
+
+}
+
+.nav .logo{
+    height: 80px;
+}
+.nav p{
+    font-size: 1.4rem;
+    color: white;
+    margin: 0;
+    padding-left: 2rem;
+}
+
+.nav .logo img{
+    height: 100%;
+    vertical-align: top;
+}
+
+.contenido-header{
+    margin-top: 80px;
+}
+
+.nav .enlaces-header a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 550 ;
+}
+
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: none;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+.hamburguer > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.portada{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contenido-header > img{
+    width: 65rem;
+    animation: ease-in animat .8s;
+}
+
+
+/* PORTADA */
+
+.portada{
+    height: 100vh;
+}
+.fotoheader{
+    max-width: 40%;
+}
+.textos-header{
+    margin: auto;
+    color: black;
+    font-size: 1.7rem;
+    margin-left: 5rem;
+}
+.textos-header h1{
+    color: #afc6ac;
+    font-size: 4rem;
+}
+
+
+/* CONOCEME */
+.conoceme{
+    background-color: #EDE9D5;
+    color: black;
+    max-height: 100vh;
+    padding-bottom: 2rem;
+}
+.conocemetexto{
+    padding: 4rem 1rem;
+}
+.imgdaiconoceme{
+    max-width: 60%;
+    border-radius: 1rem;
+}
+.contenedorconocemetexto{
+    max-width: 90%;
+    font-size: 1.6rem;
+}
+.contenedorconocemetexto ul li{
+    margin-left: 2.5rem;
+    list-style-type:circle
+    
+}
+.imgconoceme{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* TURNOS */
+
+.turnos{
+    padding-bottom: 4rem ;
+    padding-top: 4rem ;
+}
+.turnotitulo{
+    padding-bottom: 2rem;
+    font-size: 3rem;
+}
+.imgturnos{
+    max-width: 40%;
+}
+.textoturnos{
+    max-width: 90%;
+    font-size: 1.6rem;
+    margin: auto;
+    padding: 3rem;
+}
+.textoturnos button{
+    margin-top: 2rem;
+}
+
+
+/* CONTACTO */
+
+.contacto{
+    padding: 4rem 0;
+    background-color: #afc6acb4;
+}
+.contactotitulo{
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: white;
+}
+.introcontacto{
+    max-width: 90%;
+    font-size: 1.6rem;
+}
+.introcontacto a{
+    text-decoration: none;
+    color: black;
+    background-color: #c5a164;
+}
+.contenedorcontacto{
+    margin: 0;
+    padding-top: 2rem;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.formcontacto{
+    text-align: left;
+    padding: 2rem 6rem;
+    margin-left: 3rem;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #e0a680;
+    color: white;
+    padding: .3rem 5rem;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .titulo{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .contenido-header{
+        height: 650px;
+    }
+
+    .nav{
+        padding: 0 10px;
+        border-bottom: .5px solid #c5a164;
+    }
+
+    .contenido-header img{
+        width: 200px;
+    }
+
+    .enlaces-header{
+        position: fixed;
+        background-image: linear-gradient(to top, rgb(85, 85, 85) 0%, #e0a680 100%);
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0% at 100% 0);
+        transition: ease-in-out .5s;
+    }
+
+    .nav .menuDos{
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .nav .enlaces-header a{
+        color: #fff ;
+    }
+
+    .hamburguer{
+        display: block;
+    }
+}
