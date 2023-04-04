@@ -5,8 +5,13 @@
     scroll-behavior: smooth;
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 /* COLOR nav #e0a680 */
 /* COLOR links #afc6ac */
+/* COLOR boton #62a7c1 */
 
 body{
     font-family: 'Roboto', sans-serif ;
@@ -22,6 +27,9 @@ h1, h2, h3,  h4, h5, h6 {
     margin: auto;
 }
 
+button{
+    background-color: #62a7c1 !important;
+}
 
 /*NAV*/
 
@@ -75,6 +83,9 @@ nav{
     margin-left: 20px;
     font-weight: 550 ;
 }
+.nav .enlaces-header a:hover{
+    color: #62a7c1;
+}
 
 .hamburguer{
     width: 80px;
@@ -93,7 +104,6 @@ nav{
 
 .portada{
     width: 100%;
-    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +112,6 @@ nav{
 
 .contenido-header > img{
     width: 65rem;
-    animation: ease-in animat .8s;
 }
 
 
@@ -126,7 +135,7 @@ nav{
 }
 
 
-/* CONOCEME */
+/* primerpaso */
 .conoceme{
     background-color: #EDE9D5;
     color: black;
@@ -155,7 +164,27 @@ nav{
     align-items: center;
     justify-content: center;
 }
+.linkturnolista{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
 
+/* CONOCEME */
+#conoceme{
+    background-color: #62a7c1;
+}
+#conoceme h2{
+    padding-top: 3rem;
+}
+.conocemetextos{
+    font-size: 1.4rem;
+}
+.conocemetextos p{
+    padding: 1rem 2rem;
+    color: white;
+    padding-bottom: 3rem;
+}
 
 /* TURNOS */
 
@@ -233,10 +262,16 @@ footer a{
 
 
 @media screen and (max-width:600px) {
+    *{
+        max-width: 100%;
+    }
     .titulo{
         font-size: 35px;
     }
-
+    .contenedor{
+        width: 90%;
+        margin: auto;
+    }
     h1{
         font-size: 40px;
     }
@@ -246,10 +281,20 @@ footer a{
     }
 
     .nav{
-        padding: 0 10px;
         border-bottom: .5px solid #c5a164;
+        justify-content: space-around;
+        margin: auto;
+        padding: 0;
+    }
+    .navcontenedor{
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
+    .titulonav{
+        display: none;
+    }
     .contenido-header img{
         width: 200px;
     }
@@ -279,5 +324,27 @@ footer a{
 
     .hamburguer{
         display: block;
+    }
+
+
+    /*HEADER*/
+    .portada{
+        height: 80vh;
+    }
+    .contenido-header{
+        display: block !important;
+    }
+    .fotoheader{
+        text-align: center;
+    }
+    .textos-header{
+        margin: auto;
+        padding: 0;
+    }
+    .textos-header h1{
+        font-size: 2rem;
+    }
+    .textos-header p{
+        font-size: 1.3rem;
     }
 }
