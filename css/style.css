@@ -139,7 +139,6 @@ nav{
 .conoceme{
     background-color: #EDE9D5;
     color: black;
-    max-height: 100vh;
     padding-bottom: 2rem;
 }
 .conocemetexto{
@@ -273,7 +272,13 @@ footer a{
         margin: auto;
     }
     h1{
-        font-size: 40px;
+        font-size: 2.5rem !important;
+    }
+    h2{
+        font-size: 2rem !important;
+    }
+    p{
+        font-size: 1.1rem !important;
     }
 
     .contenido-header{
@@ -329,17 +334,20 @@ footer a{
 
     /*HEADER*/
     .portada{
-        height: 80vh;
+        height: 90vh;
     }
     .contenido-header{
-        display: block !important;
+        display: inline-block !important;
     }
     .fotoheader{
-        text-align: center;
+        display: block;
+        max-width: 100%;
+        margin: auto;
     }
     .textos-header{
         margin: auto;
         padding: 0;
+        padding-bottom: 2rem !important;
     }
     .textos-header h1{
         font-size: 2rem;
@@ -347,4 +355,81 @@ footer a{
     .textos-header p{
         font-size: 1.3rem;
     }
+
+
+    /*PRIMER PASO*/
+    .primerpaso{
+        display: block !important;
+    }
+    .contenedorconocemetexto{
+        display: inline;
+        font-size: 1.2rem;
+    }
+    .imgconoceme{
+        padding: 1rem;
+    }
+    .conocemetexto{
+        padding: 1.5rem;
+    }
+
+
+    /*CONOCEME*/
+    .conocemetextos{
+        display: inline !important;
+        font-size: 1.1rem;
+    }
+    .conocemetextos p{
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+
+    
+    /*TURNOS*/
+    .turnos{
+        padding-top: 2rem;
+    }
+    .contenedorturnos{
+        display: block !important;
+    }
+    .textoturnos{
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .imgturnos{
+        display: block;
+        max-width: 80%;
+        margin: auto;
+        padding-bottom: 2rem;
+    }
+    .btnturno{
+        display: block;
+        margin: auto;
+    }
+
+    /* CONTACTO */
+    .contacto{
+        padding-top: 2rem;
+    }
+    .contenedorcontacto{
+        text-align: right;
+        display: block !important;
+    }
+    .contactodatos{
+        text-align: center;
+
+    }
+    
+
+    /* FOOTER */
+    .footer{
+        display: block !important;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .footer p{
+        font-size: 0.8rem !important;
+    }
+
 }
