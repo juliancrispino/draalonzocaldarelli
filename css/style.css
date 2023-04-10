@@ -207,6 +207,9 @@ nav{
 .textoturnos button{
     margin-top: 2rem;
 }
+.btnturno{
+    text-decoration: none;
+}
 
 
 /* CONTACTO */
@@ -334,9 +337,10 @@ footer a{
 
 
     /*HEADER*/
-    .portada{
+    
+    /* .portada{
         height: 90vh;
-    }
+    } */
     .contenido-header{
         display: inline-block !important;
     }
@@ -406,6 +410,11 @@ footer a{
     .btnturno{
         display: block;
         margin: auto;
+    }
+    .enlacebtnturno{
+        display: block;
+        margin: auto;
+        text-decoration: none;
     }
 
     /* CONTACTO */
