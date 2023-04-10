@@ -337,10 +337,10 @@ footer a{
 
 
     /*HEADER*/
-    
-    /* .portada{
-        height: 90vh;
-    } */
+
+    .portada{
+        max-height: 70vh;
+    }
     .contenido-header{
         display: inline-block !important;
     }
