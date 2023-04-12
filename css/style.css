@@ -12,6 +12,7 @@ html, body {
 /* COLOR nav #e0a680 */
 /* COLOR links #afc6ac */
 /* COLOR boton #62a7c1 */
+/* #afc6ac */
 
 body{
     font-family: 'Roboto', sans-serif ;
@@ -171,7 +172,7 @@ nav{
 
 /* CONOCEME */
 #conoceme{
-    background-color: #62a7c1;
+    background-color: #afc6ac;
 }
 #conoceme h2{
     padding-top: 3rem;
