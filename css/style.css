@@ -119,7 +119,7 @@ nav{
 /* PORTADA */
 
 .portada{
-    height: 100vh;
+    min-height: 100vh;
 }
 .fotoheader{
     max-width: 40%;
