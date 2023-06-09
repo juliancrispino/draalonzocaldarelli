@@ -221,6 +221,21 @@ nav{
     text-decoration: none;
 }
 
+/* Taller */
+.taller{
+    background-color: #EDE9D5;
+    padding-bottom: 4rem ;
+    padding-top: 4rem ;
+}
+.textotaller{
+    max-width: 90%;
+    font-size: 1.6rem;
+    margin: auto;
+    padding: 3rem;
+}
+.textotaller button{
+    margin-top: 2rem;
+}
 
 /* CONTACTO */
 
@@ -432,6 +447,17 @@ footer a{
         display: block;
         margin: auto;
         text-decoration: none;
+    }
+
+    /* TALLER */
+    .textotaller{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .imgtaller{
+        padding-top: 2rem;
     }
 
     /* CONTACTO */
