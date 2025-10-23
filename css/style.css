@@ -138,12 +138,12 @@ nav{
 
 /* primerpaso */
 .conoceme{
-    background-color: #EDE9D5;
+    background-color: #fff;
     color: black;
     padding-bottom: 2rem;
 }
 .conocemetexto{
-    padding: 4rem 1rem;
+    padding: 4rem 1rem 0 0;
 }
 .imgdaiconoceme{
     max-width: 60%;
@@ -229,8 +229,24 @@ nav{
     padding-top: 4rem ;
     background-color: #fff;
 }
+.contenedorEbook{
+    padding-bottom: 1rem;
+}
 .imgebook{
     max-width: 30%;
+}
+.textoEbook{
+    max-width: 90%;
+    font-size: 1.6rem;
+    margin: auto;
+    padding: 2rem;
+}
+.textoEbook button{
+    margin-top: 2rem;
+}
+.tituloEbook{
+    padding: 1rem 2rem;
+    font-size: 2rem;
 }
 
 /* Cafecito */
@@ -259,9 +275,42 @@ nav{
     font-size: 1.6rem;
     margin: auto;
     padding: 3rem;
+    padding-bottom: 1rem;
 }
 .textotaller button{
     margin-top: 2rem;
+}
+.grid-container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 1.5rem;
+    row-gap: 2rem; 
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.grid-item {
+    text-align: center; 
+    padding: 1rem;
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block; 
+    border-radius: 4px; 
+    object-fit: cover; 
+}
+.grid-item h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: black;
+}
+.listaEspera{
+    font-size: .9rem;
+    color: gray;
+}
+.grid-item a {
+    text-decoration: none;
 }
 
 /* CONTACTO */
@@ -500,6 +549,9 @@ footer a{
     }
 
     /* Ebook */
+    .contenedorEbook{
+        display: block !important;
+    }
     .textotaller{
         max-width: 100%;
         margin: 0;
@@ -511,6 +563,13 @@ footer a{
         max-width: 70%;
         margin: auto;
         padding-bottom: 2rem;
+    }
+    .textoEbook{
+        padding: 1rem;
+    }
+    .tituloEbook{
+        padding: 0 2rem;
+        font-size: 1.5rem;
     }
     .cafecitoTexto{
         display: block !important;
@@ -535,6 +594,13 @@ footer a{
     }
     .imgtaller{
         padding-top: 2rem;
+    }
+    .grid-container{
+        display: block;
+    }
+    .grid-item h2 {
+        margin-top: 1rem;
+        font-size: 1rem!important;
     }
 
     /* CONTACTO */
