@@ -199,7 +199,7 @@ nav{
 
 .turnos{
     padding-bottom: 4rem ;
-    padding-top: 4rem ;
+    padding-top: 2rem ;
     background-color: #EDE9D5;
 }
 .turnotitulo{
@@ -275,6 +275,7 @@ nav{
     font-size: 1.6rem;
     margin: auto;
     padding: 3rem;
+    padding-top: 0;
     padding-bottom: 1rem;
 }
 .textotaller button{
