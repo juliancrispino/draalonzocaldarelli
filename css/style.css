@@ -200,11 +200,12 @@ nav{
 .turnos{
     padding-bottom: 4rem ;
     padding-top: 2rem ;
-    background-color: #EDE9D5;
+    background-color: #f6f3e3;
 }
 .turnotitulo{
     padding-bottom: 2rem;
     font-size: 3rem;
+    font-weight: 500;
 }
 .imgturnos{
     max-width: 40%;
@@ -247,6 +248,8 @@ nav{
 .tituloEbook{
     padding: 1rem 2rem;
     font-size: 2rem;
+    color: #e0a680;
+    font-weight: 500;
 }
 
 /* Cafecito */
@@ -266,7 +269,7 @@ nav{
 
 /* Taller */
 .taller{
-    background-color: #EDE9D5;
+    background-color: #f6f3e3;
     padding-bottom: 4rem ;
     padding-top: 4rem ;
 }
